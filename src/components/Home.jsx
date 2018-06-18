@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import BG from './ImageBG.jsx'
 import ContentBG from './ContentBG.jsx'
 import About from './About.jsx'
+import Info from './GeneralInfo.jsx'
 
 class Home extends Component {
   constructor(props) {
@@ -31,6 +32,7 @@ class Home extends Component {
              <BG heightStyle={this.state.height}/>
              <ContentBG heightStyle={this.state.height}/>
              <About heightStyle={this.state.height}/>
+             <Info heightStyle={this.state.height*2}/>
              
           </div>
       )

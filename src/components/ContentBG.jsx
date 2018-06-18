@@ -30,27 +30,24 @@ class ContentBG extends Component {
                 <h1>I'm Daniel Berrocal.</h1>
                 <p>I'm a Costa Rica based <span>FullStack Developer.</span> Let's start scrolling and learn more <span>about me.</span></p>
                 <hr/>
-                <Grid container spacing={40} justify="center">
-                    <Grid item xs={1}>
-                        <a href="https://www.facebook.com/jdberrocal1"><img src={facebook} alt=""/></a>
+                <Grid container spacing={0} justify="center">
+                    <Grid item xs={2} sm={1}>
+                        <a href="https://www.facebook.com/jdberrocal1"><img src={facebook}/></a>
                     </Grid>
-                    <Grid item xs={1}>
-                        <a href="https://www.github.com/jdberrocal1"><img src={github} alt=""/></a>
+                    <Grid item xs={2} sm={1}>
+                        <a href="https://www.github.com/jdberrocal1"><img src={github}/></a>
                     </Grid>
-                    <Grid item xs={1}>
-                        <a href="https://www.instagram.com/jdberrocal1"><img src={instragram} alt=""/></a>
+                    <Grid item xs={2} sm={1}>
+                        <a href="https://www.instagram.com/jdberrocal1"><img src={instragram}/></a>
                     </Grid>
-                    <Grid item xs={1}>
-                    <a href="https://www.linkedin.com/in/jdberrocal1/"><img src={linkedin} alt=""/></a>
+                    <Grid item xs={2} sm={1}>
+                    <a href="https://www.linkedin.com/in/jdberrocal1/"><img src={linkedin}/></a>
                     </Grid>
-                    <Grid item xs={1}>
-                        <a href="https://www.twitter.com/jdberrocal1"><img src={twitter} alt=""/></a>
-                    </Grid>
-                    <Grid item xs={1}>
-                        <a href="skype:jdberrocal11?userinfo"><img src={skype} alt=""/></a>
+                    <Grid item xs={2} sm={1}>
+                        <a href="https://www.twitter.com/jdberrocal1"><img src={twitter}/></a>
                     </Grid>
                 </Grid>
-                <a onClick={this.handleScroll}><img src={scroll} alt=""/></a>
+                <a onClick={this.handleScroll} style={{top: this.props.heightStyle/2}} className="scroll-link"><img src={scroll}/></a>
             </div>
         )
     }
