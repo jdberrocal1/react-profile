@@ -13,41 +13,39 @@ class ContentBG extends Component {
     constructor(props) {
       super(props);
       this.handleScroll = this.handleScroll.bind(this);
+      this.state = { windowHeight: window.innerHeight };
     }
 
     handleScroll() {
-        window.scrollTo(0, this.props.heightStyle);
+        window.scrollTo(0, this.state.windowHeight);
     }
 
-
-    render(){
-        let style = {
-            top: this.props.heightStyle/3
-        };
-  
+    render(){  
         return (
-            <div className="home-info-container" style={style}>
-                <h1>I'm Daniel Berrocal.</h1>
-                <p>I'm a Costa Rica based <span>FullStack Developer.</span> Let's start scrolling and learn more <span>about me.</span></p>
-                <hr/>
-                <Grid container spacing={0} justify="center">
-                    <Grid item xs={2} sm={1}>
-                        <a href="https://www.facebook.com/jdberrocal1"><img src={facebook}/></a>
+            <div className="home-info-container">
+                <div className="content">
+                    <h1>I'm Daniel Berrocal.</h1>
+                    <p>I'm a Costa Rica based <span>FullStack Developer.</span> Let's start scrolling and learn more <span>about me.</span></p>
+                    <hr/>
+                    <Grid container spacing={0} justify="center">
+                        <Grid item xs={2} sm={1}>
+                            <a href="https://www.facebook.com/jdberrocal1"><img src={facebook}/></a>
+                        </Grid>
+                        <Grid item xs={2} sm={1}>
+                            <a href="https://www.github.com/jdberrocal1"><img src={github}/></a>
+                        </Grid>
+                        <Grid item xs={2} sm={1}>
+                            <a href="https://www.instagram.com/jdberrocal1"><img src={instragram}/></a>
+                        </Grid>
+                        <Grid item xs={2} sm={1}>
+                        <a href="https://www.linkedin.com/in/jdberrocal1/"><img src={linkedin}/></a>
+                        </Grid>
+                        <Grid item xs={2} sm={1}>
+                            <a href="https://www.twitter.com/jdberrocal1"><img src={twitter}/></a>
+                        </Grid>
                     </Grid>
-                    <Grid item xs={2} sm={1}>
-                        <a href="https://www.github.com/jdberrocal1"><img src={github}/></a>
-                    </Grid>
-                    <Grid item xs={2} sm={1}>
-                        <a href="https://www.instagram.com/jdberrocal1"><img src={instragram}/></a>
-                    </Grid>
-                    <Grid item xs={2} sm={1}>
-                    <a href="https://www.linkedin.com/in/jdberrocal1/"><img src={linkedin}/></a>
-                    </Grid>
-                    <Grid item xs={2} sm={1}>
-                        <a href="https://www.twitter.com/jdberrocal1"><img src={twitter}/></a>
-                    </Grid>
-                </Grid>
-                <a onClick={this.handleScroll} style={{top: this.props.heightStyle/2}} className="scroll-link"><img src={scroll}/></a>
+                    <a onClick={this.handleScroll} style={{top: this.state.windowHeight-400}} className="scroll-link"><img src={scroll}/></a>
+                </div>
             </div>
         )
     }

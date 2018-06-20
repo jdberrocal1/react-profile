@@ -8,20 +8,28 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 
-.bg-container {
-    img {
-        width: 100%;
-        position: absolute;
-        top: 0px;
-        z-index: 1;
-    }
+.border-color-bottom {
+    border: 2px solid #ddd;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.padding-top-40 {
+    padding-top: 40px;
 }
 
 .home-info-container{
     text-align: center;
     width: 100%;
-    position: absolute;
     z-index: 2;
+    background-image: url('../img/cr-background.jpg');
+    height: 100vh;
+
+    .content{
+        position: relative;
+        top: 30%;
+    }
     
     h1  {
         font: 90px/1.1em 'opensans-bold', sans-serif;
@@ -79,9 +87,8 @@ body{
 }
 
 .about {
-    position: absolute;
     background: #2B2B2B;
-    padding-top: 96px;
+    padding-top: 90px;
     padding-bottom: 66px;
     overflow: hidden;
     width: 100%;
@@ -108,16 +115,15 @@ body{
 }
 
 .general-info {
-    position: absolute;
     background: #fff;
-    padding-top: 96px;
     padding-bottom: 66px;
     overflow: hidden;
     width: 100%;
     text-align: justify;
+    padding-top: 70px;
 
     .title-left {
-        padding-left: 50px;
+        text-align: right;
         text-transform: uppercase;
         font: 18px/24px 'opensans-bold', sans-serif;
 
@@ -158,5 +164,11 @@ body{
         width: 70%;
         margin: 18px auto 24px auto;
         border-color: rgba(150, 150, 150, 0.5);
+    }
+
+    @media (max-width: 400px) {
+        .title-left {
+            text-align: center;
+        }
     }
 }

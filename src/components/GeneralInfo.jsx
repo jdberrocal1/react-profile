@@ -1,31 +1,37 @@
 import React, { Component } from 'react'
 import Grid from '@material-ui/core/Grid'
 
-const Info = ({heightStyle}) => {
-  let style = {
-    top: heightStyle
-  }
-  
+const Info = () => {
+
   return (
-    <div className="general-info" style={style}>
-      <Grid container spacing={40} justify="center">
-        <Grid item xs={1}></Grid>
-        <Grid item xs={11} sm={2}>
+    <div className="general-info" >
+      <Grid container spacing={40} justify="center" className="padding-top-40">
+        <Grid item xs={12} sm={3}>
             <h2 className="title-left"><span>Education</span></h2>
         </Grid>
-        <Grid item xs={10} sm={5}>
+        <Grid item xs={11} sm={5} className="border-color-bottom">
             <h2 className="title-right">Tecnológico de Costa Rica</h2>
 
             <p className="subtitle">Computer Engineering Degree <span>•</span> <em className="date">2015</em></p>
         </Grid>
       </Grid>
-      <hr/>
-      <Grid container spacing={40} justify="center">
-        <Grid item xs={1}></Grid>
-        <Grid item xs={11} sm={2}>
+      <Grid container spacing={40} justify="center" className="padding-top-40">
+        <Grid item xs={12} sm={3}>
+            <h2 className="title-left"><span>Languages</span></h2>
+        </Grid>
+        <Grid item xs={11} sm={5} className="border-color-bottom">
+            <h2 className="title-right">Spanish</h2>
+            <p className="subtitle">Native</p>
+
+            <h2 className="title-right">English</h2>
+            <p className="subtitle">Professional working proficiency</p>
+        </Grid>
+      </Grid>
+      <Grid container spacing={40} justify="center" className="padding-top-40">
+        <Grid item xs={12} sm={3}>
             <h2 className="title-left"><span>Work</span></h2>
         </Grid>
-        <Grid item xs={10} sm={5}>
+        <Grid item xs={11} sm={5}>
             <h2 className="title-right">BeenVerified</h2>
             <p className="subtitle">FullStack Developer <span>•</span> <em className="date">May 2018 - Present</em></p>
             <p>New York based company, founded in 2007, BeenVerified is a background check company that provides consumer initiated criminal background and people search services through its website for profit.</p>

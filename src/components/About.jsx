@@ -2,20 +2,17 @@ import React, { Component } from 'react'
 import Grid from '@material-ui/core/Grid'
 import profile from './../img/profile.png'
 
-const About = ({heightStyle}) => {
-  let style = {
-    top: heightStyle
-  }
+const About = () => {
   
   return (
-    <div className="about" style={style}>
+    <div className="about" id="about">
       <Grid container spacing={40} justify="center">
-        <Grid item xs={12} sm={2}>
+        <Grid item xs={12} sm={3}>
             <div className="profile-img-container">
               <img src={profile}/>
             </div>
         </Grid>
-        <Grid item xs={11} sm={5}>
+        <Grid item xs={11} sm={8}>
           <h2>About Me</h2>
 
           <p>I am a developer passionate for software development, mostly for Frontend technologies, with the ability to learn and adapt to new technologies. With the faculty to work well, independently and comfortable in a distributed team and easily adaptable to different company cultures.</p>
@@ -33,6 +30,7 @@ const About = ({heightStyle}) => {
             <br/>
             Skype: jdberrocal11
           </p>
+          <p id="aboutEnd"></p>
         </Grid>
       </Grid>
     </div>
