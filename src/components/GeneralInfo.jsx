@@ -9,7 +9,7 @@ const Info = () => {
         <Grid item xs={12} sm={3}>
             <h2 className="title-left"><span>Education</span></h2>
         </Grid>
-        <Grid item xs={11} sm={5} className="border-color-bottom">
+        <Grid item xs={11} sm={8} className="border-color-bottom">
             <h2 className="title-right">Tecnológico de Costa Rica</h2>
 
             <p className="subtitle">Computer Engineering Degree <span>•</span> <em className="date">2015</em></p>
@@ -19,7 +19,7 @@ const Info = () => {
         <Grid item xs={12} sm={3}>
             <h2 className="title-left"><span>Languages</span></h2>
         </Grid>
-        <Grid item xs={11} sm={5} className="border-color-bottom">
+        <Grid item xs={11} sm={8} className="border-color-bottom">
             <h2 className="title-right">Spanish</h2>
             <p className="subtitle">Native</p>
 
@@ -31,7 +31,7 @@ const Info = () => {
         <Grid item xs={12} sm={3}>
             <h2 className="title-left"><span>Work</span></h2>
         </Grid>
-        <Grid item xs={11} sm={5}>
+        <Grid item xs={11} sm={8}>
             <h2 className="title-right">BeenVerified</h2>
             <p className="subtitle">FullStack Developer <span>•</span> <em className="date">May 2018 - Present</em></p>
             <p>New York based company, founded in 2007, BeenVerified is a background check company that provides consumer initiated criminal background and people search services through its website for profit.</p>

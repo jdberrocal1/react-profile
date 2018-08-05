@@ -15,7 +15,7 @@ const About = () => {
         <Grid item xs={11} sm={8}>
           <h2>About Me</h2>
 
-          <p>I am a developer passionate for software development, mostly for Frontend technologies, with the ability to learn and adapt to new technologies. With the faculty to work well, independently and comfortable in a distributed team and easily adaptable to different company cultures.</p>
+          <p>I am a developer passionate for software lifecycle, mostly for Frontend technologies, with the ability to learn and adapt to new technologies. With the faculty to work well, independently and comfortable in a distributed team and easily adaptable to different company cultures.</p>
           <p>I'm currently working as FullStack developer with technologies like: Ruby on Rails, Sinatra, Resque, NodeJS, ReactJS, Bootstrap, for a New York based company.</p>
 
           <h2>Contact Details</h2>
